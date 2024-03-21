@@ -1,5 +1,6 @@
 QT       += core gui
-
+QT += widgets
+QT += core5compat
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
