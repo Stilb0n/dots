@@ -354,6 +354,7 @@ Makefile: ..\2dot7\2dot7.pro C:\Intel\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\features\qt_config.prf \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake.conf \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\features\spec_post.prf \
+		.qmake.stash \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\features\exclusive_builds.prf \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\common\msvc-version.conf \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\features\toolchain.prf \
@@ -385,7 +386,6 @@ Makefile: ..\2dot7\2dot7.pro C:\Intel\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core5Compat.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6EntryPoint.prl \
-		.qmake.stash \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Guid.prl \
@@ -663,6 +663,7 @@ C:\Intel\6.5.3\msvc2019_64\mkspecs\features\qt_functions.prf:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\features\qt_config.prf:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake.conf:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\features\spec_post.prf:
+.qmake.stash:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\features\exclusive_builds.prf:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\common\msvc-version.conf:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\features\toolchain.prf:
@@ -694,7 +695,6 @@ C:\Intel\6.5.3\msvc2019_64\lib\Qt6Gui.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core5Compat.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6EntryPoint.prl:
-.qmake.stash:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Guid.prl:

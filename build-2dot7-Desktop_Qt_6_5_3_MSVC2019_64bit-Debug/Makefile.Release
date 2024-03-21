@@ -569,6 +569,13 @@ release\moc_win.cpp: ..\2dot7\win.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtextcodec.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qcore5global.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtcore5compat-config.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QLineEdit \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlineedit.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QPushButton \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qpushbutton.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qabstractbutton.h \
 		release\moc_predefs.h \
 		C:\Intel\6.5.3\msvc2019_64\bin\moc.exe
 	C:\Intel\6.5.3\msvc2019_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include C:/Users/User/Documents/dots/build-2dot7-Desktop_Qt_6_5_3_MSVC2019_64bit-Debug/release/moc_predefs.h -IC:/Intel/6.5.3/msvc2019_64/mkspecs/win32-msvc -IC:/Users/User/Documents/dots/2dot7 -IC:/Intel/6.5.3/msvc2019_64/include -IC:/Intel/6.5.3/msvc2019_64/include/QtWidgets -IC:/Intel/6.5.3/msvc2019_64/include/QtGui -IC:/Intel/6.5.3/msvc2019_64/include/QtCore5Compat -IC:/Intel/6.5.3/msvc2019_64/include/QtCore -I. -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt" ..\2dot7\win.h -o release\moc_win.cpp
@@ -985,6 +992,13 @@ release\main.obj: ..\2dot7\main.cpp ..\2dot7\win.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtextcodec.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qcore5global.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtcore5compat-config.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QLineEdit \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlineedit.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QPushButton \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qpushbutton.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qabstractbutton.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QApplication \
 		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qapplication.h
 
@@ -1381,7 +1395,23 @@ release\win.obj: ..\2dot7\win.cpp ..\2dot7\win.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\QTextCodec \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtextcodec.h \
 		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qcore5global.h \
-		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtcore5compat-config.h
+		C:\Intel\6.5.3\msvc2019_64\include\QtCore5Compat\qtcore5compat-config.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QLabel \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlabel.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QLineEdit \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlineedit.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QPushButton \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qpushbutton.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qabstractbutton.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QMessageBox \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qmessagebox.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qdialog.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\QBoxLayout \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qboxlayout.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlayout.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qlayoutitem.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtWidgets\qgridlayout.h \
+		C:\Intel\6.5.3\msvc2019_64\include\QtGui\QValidator
 
 release\moc_win.obj: release\moc_win.cpp 
 
