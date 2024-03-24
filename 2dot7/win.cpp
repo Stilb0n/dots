@@ -38,12 +38,14 @@ win::win(QWidget *parent)
     hLayout->addWidget(frame);
     hLayout->addLayout(vLayout2);
     begin();
-    connect(exitButton,SIGNAL(clicked(bool)),
-            this,SLOT(close()));
-    connect(nextButton,SIGNAL(clicked(bool)),
-            this,SLOT(begin()));
-    connect(inputEdit,SIGNAL(returnPressed()),
-            this,SLOT(calc()));
+    // Подключение сигнала и слота для кнопки выхода
+    connect(exitButton, &QPushButton::clicked, this, &win::close);
+
+    // Подключение сигнала и слота для кнопки "Далее"
+    connect(nextButton, &QPushButton::clicked, this, &win::begin);
+
+    // Подключение сигнала и слота для редактирования ввода
+    connect(inputEdit, &QLineEdit::returnPressed, this, &win::calc);
 }
 
 
@@ -65,7 +67,7 @@ void win::calc()
     bool Ok=true; float r,a;
     QString str=inputEdit->text();
     a=str.toDouble(&Ok);
-    if (Ok)
+    if ((Ok)&&(a<1000))
     {
         r=a*a;
         str.setNum(r);
