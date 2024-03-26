@@ -11,6 +11,11 @@ label1 = new QLabel("Cчет по 1",this);
  edit2 = new Counter("0",this);
  calcbutton=new QPushButton("+1",this);
  exitbutton=new QPushButton("Выход",this);
+if (!(label1 && label2 && edit1 && edit2 && calcbutton && exitbutton))
+ {
+     qDebug() << "Ошибка: один из указателей равен nullptr.";
+ }
+
  //(codec->toUnicode
  QHBoxLayout *layout1 = new QHBoxLayout();
  layout1->addWidget(label1);
@@ -26,12 +31,15 @@ label1 = new QLabel("Cчет по 1",this);
  layout4->addLayout(layout2);
  layout4->addLayout(layout3);
  // связь сигнала нажатия кнопки и слота закрытия окна
- connect(calcbutton,SIGNAL(clicked(bool)),
- edit1,SLOT(add_one()));
- connect(edit1,SIGNAL(tick_signal()),
- edit2,SLOT(add_one()));
- connect(exitbutton,SIGNAL(clicked(bool)),
- this,SLOT(close()));
+
+
+ connect(calcbutton, &QPushButton::clicked, edit1, &Counter::add_one);
+
+
+ connect(edit1, &Counter::tick_signal, edit2, &Counter::add_one);
+
+
+ connect(exitbutton, &QPushButton::clicked, this, &win::close);
 
 }
 
