@@ -23,21 +23,24 @@ win::win(QWidget *parent)
  this);
     exitButton = new QPushButton(codec->toUnicode("Выход"),
  this);
-    // компоновка приложения выполняется согласно рисунку 2.
+    // компоновка приложения
     QVBoxLayout *vLayout1 = new QVBoxLayout(frame);
     vLayout1->addWidget(inputLabel);
     vLayout1->addWidget(inputEdit);
     vLayout1->addWidget(outputLabel);
     vLayout1->addWidget(outputEdit);
+    //при растягивании окна объекты держатся вместе
     vLayout1->addStretch();
     QVBoxLayout *vLayout2 = new QVBoxLayout();
     vLayout2->addWidget(nextButton);
     vLayout2->addWidget(exitButton);
+    // почему тут 2 пружины?
     vLayout2->addStretch();
     QHBoxLayout *hLayout = new QHBoxLayout(this);
     hLayout->addWidget(frame);
     hLayout->addLayout(vLayout2);
     begin();
+    //рассказать про функционал connect
     // Подключение сигнала и слота для кнопки выхода
     connect(exitButton, &QPushButton::clicked, this, &win::close);
 
@@ -66,6 +69,7 @@ void win::calc()
 {
     bool Ok=true; float r,a;
     QString str=inputEdit->text();
+    //передаем адрес если бы не адрес то не скомпилировался бы (!передаем переменную по адресу для того чтобы функция могла её изменить!.)
     a=str.toDouble(&Ok);
     if ((Ok)&&(a<1000))
     {
