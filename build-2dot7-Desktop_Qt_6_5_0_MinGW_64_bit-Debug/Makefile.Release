@@ -498,6 +498,13 @@ release/moc_win.cpp: ../2dot7/win.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QFrame \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		release/moc_predefs.h \
 		C:/Intel/6.5.0/mingw_64/bin/moc.exe
 	C:\Intel\6.5.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/User/Documents/dots/build-2dot7-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Intel/6.5.0/mingw_64/mkspecs/win32-g++ -IC:/Users/User/Documents/dots/2dot7 -IC:/Intel/6.5.0/mingw_64/include -IC:/Intel/6.5.0/mingw_64/include/QtWidgets -IC:/Intel/6.5.0/mingw_64/include/QtGui -IC:/Intel/6.5.0/mingw_64/include/QtCore -I. -IC:/Intel/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Intel/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Intel/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Intel/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Intel/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Intel/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\2dot7\win.h -o release\moc_win.cpp
@@ -910,6 +917,13 @@ release/main.o: ../2dot7/main.cpp ../2dot7/win.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QFrame \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\2dot7\main.cpp
@@ -1303,7 +1317,23 @@ release/win.o: ../2dot7/win.cpp ../2dot7/win.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qsizepolicy.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QFrame \
-		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qframe.h
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/QBoxLayout \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Intel/6.5.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Intel/6.5.0/mingw_64/include/QtGui/QValidator
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\win.o ..\2dot7\win.cpp
 
 release/moc_win.o: release/moc_win.cpp 
