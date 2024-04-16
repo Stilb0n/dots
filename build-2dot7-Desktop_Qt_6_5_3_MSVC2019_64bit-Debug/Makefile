@@ -383,11 +383,13 @@ Makefile: ..\2dot7\2dot7.pro C:\Intel\6.5.3\msvc2019_64\mkspecs\win32-msvc\qmake
 		..\2dot7\2dot7.pro \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Widgets.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Gui.prl \
+		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core5Compat.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6EntryPoint.prl \
 		C:\Intel\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Guid.prl \
+		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core5Compatd.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6Cored.prl \
 		C:\Intel\6.5.3\msvc2019_64\lib\Qt6EntryPointd.prl
 	$(QMAKE) -o Makefile ..\2dot7\2dot7.pro -spec win32-msvc "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -690,11 +692,13 @@ C:\Intel\6.5.3\msvc2019_64\mkspecs\features\lex.prf:
 ..\2dot7\2dot7.pro:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Widgets.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Gui.prl:
+C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core5Compat.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6EntryPoint.prl:
 C:\Intel\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Guid.prl:
+C:\Intel\6.5.3\msvc2019_64\lib\Qt6Core5Compatd.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6Cored.prl:
 C:\Intel\6.5.3\msvc2019_64\lib\Qt6EntryPointd.prl:
 qmake: FORCE

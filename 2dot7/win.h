@@ -3,7 +3,7 @@
 #include <QtGui>
 #include <QMainWindow>
 #include <QFrame>
-
+#include <QTextCodec>
 #include<QLabel>
 #include<QLineEdit>
 #include<QPushButton>
@@ -16,6 +16,7 @@ class win : public QWidget // класс окна
     Q_OBJECT // макрос Qt, обеспечивающий корректное создание сигналов и слотов
 
 protected:
+    QTextCodec *codec; //перекодировщик
 
     QFrame *frame; // рамка
     QLabel *inputLabel; // метка ввода

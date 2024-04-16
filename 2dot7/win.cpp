@@ -6,20 +6,28 @@
 win::win(QWidget *parent)
     : QWidget(parent)
 {
-
-    setWindowTitle("Возведение в квадрат");
+    codec = QTextCodec::codecForName("Windows-1251");
+    setWindowTitle(codec->toUnicode("Возведение в квадрат"));
     frame = new QFrame(this);
     frame->setFrameShadow(QFrame::Raised); //тень будет поднятой
-    frame->setFrameShape(QFrame::Panel); //рамка будет прямоугольной с простым угловым соединением
-    inputLabel = new QLabel("Введите число:",this); //метка для текста над редактором ввода
+    frame->setFrameShape(QFrame::Panel);//рамка будет прямоугольной с простым угловым соединением
+    inputLabel = new QLabel(codec->toUnicode("Введите число:"),
+                            this);
+
+
+
+    inputLabel = new QLabel(codec->toUnicode("Введите число:"),this); //метка для текста над редактором ввода
     inputEdit = new QLineEdit("",this);
     //Передача указателя на объект QLineEdit в конструктор StrValidator позволяет связать этот валидатор с конкретным полем ввода и применить к нему заданные правила валидации.
     StrValidator *v=new StrValidator(inputEdit); // передается указатель на объект QLineEdit в качестве аргумента конструктора
     inputEdit->setValidator(v); // устанавливаем валидатор для редактора ввода
-    outputLabel = new QLabel("Результат:",this); // метка для текста перед редактором вывода
+    outputLabel = new QLabel(codec->toUnicode("Результат:"),
+                             this); // метка для текста перед редактором вывода
     outputEdit = new QLineEdit("",this); // редактор вывода
-    nextButton = new QPushButton("Следующее", this); // кнопка для ввода следующего числа
-    exitButton = new QPushButton("Выход",this); //кнопка выхода из приложения
+    nextButton = new QPushButton(codec->toUnicode("Следующее"),
+                                 this); // кнопка для ввода следующего числа
+    exitButton = new QPushButton(codec->toUnicode("Выход"),
+                                 this); //кнопка выхода из приложения
     // компоновка приложения
     QVBoxLayout *vLayout1 = new QVBoxLayout(frame); //Класс QVBoxLayout Выстраивает виджеты в вертикальную линию
     vLayout1->addWidget(inputLabel);
@@ -82,8 +90,8 @@ void win::calc()
         if (!str.isEmpty()) // дополнительная проверка если строка не пустая
         {
             QMessageBox msgBox(QMessageBox::Information,
-                               ("Возведение в квадрат."),
-                              ("Введено неверное значение."),
+                               codec->toUnicode("Возведение в квадрат."),
+                               codec->toUnicode("Введено неверное значение."),
                                QMessageBox::Ok); //инициализируем объект типа информационного окна, который уведомляет о ситуации
             msgBox.exec(); // делает окно модальным, Модальным называется окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь это окно не закроет.
         }
