@@ -6,7 +6,7 @@
 win::win(QWidget *parent)
     : QWidget(parent)
 {
-    codec = QTextCodec::codecForName("Windows-1251");
+    codec = QTextCodec::codecForName("Windows-1251"); //Ищет все установленныеQTextCodecобъекты и возвращает тот, который лучше всего соответствует name
     setWindowTitle(codec->toUnicode("Возведение в квадрат"));
     frame = new QFrame(this);
     frame->setFrameShadow(QFrame::Raised); //тень будет поднятой
