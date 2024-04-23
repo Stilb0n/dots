@@ -88,3 +88,11 @@ compile_commands.json
 *.pdb
 *.ilk
 *.idx
+*.pdb
+*.ilk
+*.idx
+/build-2-9-Desktop_x86_windows_msvc2022_pe_64bit-Debug
+/build-2-9-Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qtc_clangd/.cache/clangd/index
+/build-2-9-Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qtc_clangd/.cache/clangd
+/build-2-9-Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qtc_clangd/.cache
+/build-2-9-Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qtc_clangd
