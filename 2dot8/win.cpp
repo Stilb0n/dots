@@ -3,7 +3,7 @@
 win::win(QWidget *parent)
     : QWidget(parent)
 {
-//codec = QTextCodec::codecForName("Windows-1251");
+
  this->setWindowTitle("Счетчик");
 label1 = new QLabel("Cчет по 1",this);
      label2 = new QLabel("Cчет по 5",this);
@@ -16,7 +16,7 @@ if (!(label1 && label2 && edit1 && edit2 && calcbutton && exitbutton))
      qDebug() << "Ошибка: один из указателей равен nullptr.";
  }
 
- //(codec->toUnicode
+
  QHBoxLayout *layout1 = new QHBoxLayout();
  layout1->addWidget(label1);
  layout1->addWidget(label2);
@@ -33,13 +33,13 @@ if (!(label1 && label2 && edit1 && edit2 && calcbutton && exitbutton))
  // связь сигнала нажатия кнопки и слота закрытия окна
 
 
- connect(calcbutton, &QPushButton::clicked, edit1, &Counter::add_one);
+ connect(calcbutton, &QPushButton::clicked, edit1, &Counter::add_one); // добавить логику для нажатия еа кнопку +1 // связь для нажатия на кнопку +1
 
 
- connect(edit1, &Counter::tick_signal, edit2, &Counter::add_one);
+ connect(edit1, &Counter::tick_signal, edit2, &Counter::add_one); // добавить логику для добавления единицы во второе поле
 
 
- connect(exitbutton, &QPushButton::clicked, this, &win::close);
+ connect(exitbutton, &QPushButton::clicked, this, &win::close); // добавить логику для кнопки закрытия программы
 
 }
 
